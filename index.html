@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hostel Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>Hostel Management System</h1>
+</header>
+
+<section class="hero" id="heroSection">
+<h2>Smart & Secure Hostel Management</h2>
+</section>
+
+<section class="login-section" id="loginSection">
+
+<h2>Login</h2>
+
+<select id="role">
+<option value="student">Student</option>
+<option value="parent">Parent</option>
+<option value="admin">Admin</option>
+</select>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</section>
+
+<div class="dashboard" id="dashboard">
+
+<aside class="sidebar">
+<h2 id="roleTitle"></h2>
+<ul id="menu"></ul>
+</aside>
+
+<main class="content">
+
+<div style="display:flex;justify-content:space-between;">
+<h2 id="pageTitle">Dashboard</h2>
+<button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div id="contentArea"></div>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
